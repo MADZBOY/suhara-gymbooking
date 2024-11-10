@@ -1,0 +1,444 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0a0a0a, #333);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Content Container */
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Container Styling */
+.container {
+    background: #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px;
+    overflow-y: auto;
+}
+
+/* Headers */
+h2 {
+    color: #76ff03;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background: #1b1b1b;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    color: #76ff03;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #76ff03;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background: #64dd17;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+/* Search Form Styling */
+.search-form {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #76ff03;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.search-form .search-button {
+    padding: 8px 15px;
+    background: #76ff03;
+    color: #1b1b1b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-form .search-button:hover {
+    background: #64dd17;
+}
+
+/* Table Styling */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.workout-session-table, .user-table, .payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ddd;
+}
+
+.workout-session-table th, .user-table th, .payment-table th,
+.workout-session-table td, .user-table td, .payment-table td {
+    padding: 12px;
+    border: 1px solid #76ff03;
+    text-align: left;
+}
+
+.workout-session-table th, .user-table th, .payment-table th {
+    background-color: #333;
+    color: #76ff03;
+    font-weight: bold;
+}
+
+.workout-session-table tr:nth-child(even), .user-table tr:nth-child(even), .payment-table tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+/* Input Styling for Inline Editing */
+input[type="text"], input[type="date"], input[type="time"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #76ff03;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* Success and Error Messages */
+.success-message, .error-message {
+    font-weight: bold;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success-message {
+    color: #76ff03;
+    background-color: #333;
+}
+
+.error-message {
+    color: #ff5252;
+    background-color: #333;
+}
+
+/* Button Styling */
+button, .update, .delete, .pay-button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Button Variants */
+button {
+    background: #76ff03;
+    color: #1b1b1b;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background: #64dd17;
+    color: #000;
+}
+
+button:focus {
+    outline: none;
+}
+
+.update {
+    background-color: #4caf50; /* Green for update */
+    color: #fff;
+}
+
+.update:hover {
+    background-color: #43a047;
+}
+
+.delete {
+    background-color: #f44336; /* Red for delete */
+    color: #fff;
+}
+
+.delete:hover {
+    background-color: #e53935;
+}
+
+/* Button Icons */
+.update i, .delete i {
+    margin-right: 5px;
+}
+
+/* Form Container */
+.form-container {
+    background: #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 20px auto;
+    overflow-y: auto;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 10px;
+    color: #76ff03;
+    font-weight: bold;
+}
+
+/* Link Styling */
+a {
+    color: #76ff03;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #64dd17;
+}
+/****** Content Wrapper ******/
+.content {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    background: #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+/****** Heading Styling ******/
+h2 {
+    color: #76ff03;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/****** Payment Cards Container ******/
+.payment-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/****** Individual Payment Card ******/
+.payment-card {
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    color: #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-card h3 {
+    color: #76ff03;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.payment-card p {
+    margin: 5px 0;
+    font-size: 0.95em;
+    color: #bbb;
+}
+
+.payment-card strong {
+    color: #76ff03;
+}
+
+/****** Hover Effect on Payment Card ******/
+.payment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/****** No Payments Message ******/
+.no-payments {
+    color: #ff5252;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+/****** Main Content ******/
+.main-content {
+    padding: 20px;
+}
+
+/****** Dashboard Container ******/
+.container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    color: #76ff03;
+}
+
+/****** Welcome Message ******/
+.container h2 {
+    color: #76ff03;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.datetime {
+    font-size: 1.1em;
+    color: #76ff03;
+    margin-bottom: 20px;
+}
+
+/****** Dashboard Cards Layout ******/
+.dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/****** Individual Card Style ******/
+.card {
+    background: #333;
+    color: #76ff03;
+    border-radius: 8px;
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/****** Icon Style ******/
+.card i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #76ff03;
+}
+
+/****** Card Info ******/
+.card-info h3 {
+    color: #76ff03;
+    font-size: 1.2em;
+    margin: 0;
+}
+/****** Admin Dashboard Styling ******/
+.content h2 {
+    color: #76ff03;
+    text-align: center;
+}
+
+.dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #333;
+    border-radius: 8px;
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #76ff03;
+}
+
+.card-info h3, .card-info p {
+    color: #76ff03;
+    margin: 0;
+}

@@ -1,0 +1,60 @@
+.main-content {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    background: #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+h2 {
+    color: #76ff03;
+}
+
+.selection-form label {
+    display: block;
+    margin-top: 15px;
+    color: #76ff03;
+}
+
+.selection-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #76ff03;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.selection-form button {
+    background: #76ff03;
+    color: #1b1b1b;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.selection-form button:hover {
+    background: #64dd17;
+    color: #000;
+}
+
+/* Success and Error Messages */
+.success-message, .error-message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.success-message {
+    color: #76ff03;
+}
+
+.error-message {
+    color: #ff5252;
+}

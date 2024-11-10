@@ -1,0 +1,99 @@
+/****** Main Content Styling ******/
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-align: center;
+}
+
+/****** Search Form Styling ******/
+.search-form {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #76ff03;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.search-form .search-button {
+    padding: 8px 15px;
+    background: #76ff03;
+    color: #1b1b1b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-form .search-button:hover {
+    background: #64dd17;
+}
+
+/****** Table Styling ******/
+.workout-session-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ddd;
+}
+
+.workout-session-table th, .workout-session-table td {
+    padding: 12px;
+    border: 1px solid #76ff03;
+    text-align: left;
+}
+
+.workout-session-table th {
+    background-color: #333;
+    color: #76ff03;
+    font-weight: bold;
+}
+
+.workout-session-table tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+/****** Button Styling ******/
+.update, .delete {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+}
+
+.update {
+    background-color: #4caf50; /* Green for update */
+}
+
+.update:hover {
+    background-color: #43a047;
+}
+
+.delete {
+    background-color: #f44336; /* Red for delete */
+}
+
+.delete:hover {
+    background-color: #e53935;
+}
+
+.update i, .delete i {
+    margin-right: 5px;
+}

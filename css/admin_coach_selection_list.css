@@ -1,0 +1,62 @@
+/****** Table Styling ******/
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.coach-selection-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.coach-selection-table th, .coach-selection-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #76ff03;
+}
+
+.coach-selection-table th {
+    background-color: #333;
+    color: #76ff03;
+    font-weight: bold;
+}
+
+.coach-selection-table tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+/****** Button Styling ******/
+.update, .delete {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.update {
+    background-color: #4caf50; /* Green */
+}
+
+.update:hover {
+    background-color: #43a047;
+}
+
+.delete {
+    background-color: #f44336; /* Red */
+}
+
+.delete:hover {
+    background-color: #e53935;
+}
+
+.update i, .delete i {
+    margin-right: 5px;
+}
